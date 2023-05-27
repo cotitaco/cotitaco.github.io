@@ -3,12 +3,317 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Rodrigo's Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my personal website</h1>
 
-    <p>Sorry, my website is under construction, please come back soon to view its content
-    </p>
+
+    <!--  Banner  Top -->
+   <!--Nav bar-->
+   <nav class="navbar navbar-expand-md m-0 p-0">
+    <div class="container-fluid p-4" style="background-color: #000000;">
+       <a href="#intro" class="navbar-brand"></a>
+       <!--Toogle buuton for mobile-->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+       aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!--Navbar links-->
+
+       <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+           <ul class="navbar-nav">
+                <!-- DROPDOWN ELEMENT HOME-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-decoration-underline fw-bold text-white" 
+                href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 150%
+                ">
+                  Home Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#about">About Me</a></li>
+                  <li><a class="dropdown-item" href="#interests">Interests</a></li>
+                  <li><a class="dropdown-item" href="#cybersecurity">CyberSecurity and Extras</a></li>
+                </ul>
+              </li>
+               <li class="nav-item m-2 pe-2 border-end border-primary">
+                   <a href="industry.html" class="nav-link text-white" style="font-size: 150% ">Industry Experience</a>
+               </li>
+               <!-- DROPDOWN EDUCATION-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" href="#education" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 150%">
+                  Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="education.html">Masters</a></li>
+                  <li><a class="dropdown-item" href="education.html">Bacherlors</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="education.html">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="education.html">Teaching Assistant</a></li>
+                </ul>
+              </li>
+               <!--<li class="nav-item d-md-none">
+                   <a href="#pricing" class="nav-link" style="font-size: 150%">Pricing</a>
+               </li>    THIS PART IS USED TO HIDE AN ELEMENT IN BIG SCREENS  --> 
+               <li class="nav-item  m-2 pe-2 border-end border-primary">
+                   <a href="projects.html" class="nav-link text-white" style="font-size: 150%">Projects</a>
+               </li>
+           </ul>
+       </div>
+    </div>
+   </nav>
+
+
+   <!-- Banner  -->
+   <header class="masterheader">
+    <div class="container-fluid bg-light m-0 p-0">
+        <div class="col">
+            <img src="Images/Banner1.jpg" style="max-width:100%;" class=" bannerImg p-0 m-0">
+            <div class="name_banner fs-1">Rodrigo Ledesma</div>
+            <p class="areas_interest">Machine Learning, Deep Learning, Web Desing, Natural Language
+                Processing, Data Science. Python, JavaScritp, HTML&CSS 
+            </p>
+        </div>
+   </div>
+   </header>
+
+   <!--  Image and About me  -->
+
+   <section class="intro" id="about">
+        <div class="container-fluid p-5" style="background-color: #a2d0f0;">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center">
+                    <h1>
+                        <img src="Images/Pro_6.jpg" style="max-height: 800px;">
+                    </h1>
+                </div>
+                <div class="col-md-5 text-start">
+                    <h1>
+                        <div class="display-4">Who am I?</div>
+                    </h1>
+                    <p class="aboutMe">
+                        I am about to finish a Master's Degree at the University of Ottawa on
+                        Computer Science with Concentration in Artificial Intelligence. I studied a
+                        Bacherlor's Degree on Electronics and Telecommunications. A couple years ago
+                        I have the oportunity of working together with a multinational Financial Institution
+                        in the technology sector for 4 years. Now a days my main areas of interest focus on
+                        <span class="text-decoration-underline">Deep Learning, Natural Language Processing,
+                            CyberSecurity and Data Science.
+                        </span> Please scroll down to find out more about my projects and related interests
+                    </p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!------------------------------------------  Interests  ------------------------------->
+
+   <section class="interests" id="interests">
+        <div class="container-fluid bg-dark p-5" >
+                <p class="interestHeader text-white">Interests</p>
+                <p class="text-light text-center" style="font-size: 25px;">Take a glance at some of the topics 
+                    I have been working on</p>
+        </div>
+
+        <!--  Machine Learning  -->
+        <div class="container-fluid bg-dark">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-3 text-center">
+                    <p>interest 1</p>
+                    <div class="card intcard">
+                        <div class="card-header fw-bold">Machine Learning</div>
+                        <img src="/Images/ML.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text interestPar">Experience with popular frameworks and libraries 
+                            in Python like Pandas, Numpy, Tensorflow, Pytorch, Sklearn, Seaborn, 
+                            Matplotlibr and Keras to train and deploy simple and complex ML models. 
+                          </p>
+                          <a href="#" class="btn btn-primary position-absolute bottom-0 translate-middle">
+                            ML Projects</a>
+                        </div>
+                      </div>
+                </div>
+
+                <!--  Deep Learning  -->
+                <div class="col-3 text-center">
+                    <p>interest 2</p>
+                    <div class="card intcard">
+                        <div class="card-header fw-bold">Deep Learning</div>
+                        <img src="Images/DL.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text interestPar">Experinence training and deploying models based
+                            on neural networks such as MultiLayered Perceptrons, Convolutional Nural
+                            Networs, Recurrent Neural Networks, Transformer-Based Models such as BERT and
+                            Generative Adversarial Networks using common libraries such as Pytorch and 
+                            Tenforflow. 
+                          </p>
+                          <a href="#" class="btn btn-primary position-absolute bottom-0 translate-middle">
+                            DL Projects</a>
+                        </div>
+                      </div>
+                </div>
+
+                <!--  Natural Language Processing  -->
+                <div class="col-3 text-center">
+                    <p>interest 3</p>
+                    <div class="card intcard">
+                        <div class="card-header fw-bold">Natural Language Processing</div>
+                        <img src="Images/NLP.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text interestPar"> Experience using Recurrent Neural Networks and 
+                            BERT-based models using frameworks such as Tensorflow, Keras and HuggingFace.
+                            Experience with NLTK library to manually 
+                            extract features from text and create models based on RNN or BoW/Word2Vec.
+                         </p>
+                          <a href="#" class="btn btn-primary position-absolute bottom-0 translate-middle">
+                            NLP Projects</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <!--  Image Processing  -->
+            <div class="row justify-content-center align-items-center pb-5">
+                <div class="col-3 text-center">
+                    <p>interest 4</p>
+                    <div class="card intcard">
+                        <div class="card-header fw-bold">Image Processing</div>
+                        <img src="Images/ImagePro.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text interestPar"> 
+                            Experience training and configuring different types of Convolutional
+                            Neural Networks together with Generative Adversarial 
+                            Networks. The research done in this field consisted of training different types 
+                            of GANs to translate a sketch of an image into an Impressionist painting. This
+                            with the purpose of having an alternative to traditional Data Augmentation methods
+                            to improve the quality of image generation. 
+                          </p>
+                          <a href="#" class="btn btn-primary position-absolute bottom-0 translate-middle">
+                            Img Procc Projects</a>
+                        </div>
+                      </div>
+                </div>
+
+                <!--  Interface Desing  -->
+                <div class="col-3 text-center">
+                    <p>interest 5</p>
+                    <div class="card intcard">
+                        <div class="card-header fw-bold">User Interface Desing</div>
+                        <img src="/Images/htmlcss.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text interestPar">Desing and Analysis of User Interfaces
+                            using HTML and CSS. Complementing these skills with Bootstrap and React. Also
+                            some basic knowledge on JavaScript and NodeJS to create endpoints and APIs. 
+                          </p>
+                          <a href="#" class="btn btn-primary position-absolute bottom-0 translate-middle">
+                            HTML JS Projects</a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="col-3 text-center">
+                    <p>interest 6</p>
+                    <div class="card intcard">
+                        <div class="card-header fw-bold">Cybersecurity & Extras</div>
+                        <img src="/Images/cybersecurity.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text interestPar">Experience with GIT and Scrum/Agile
+                            frameworks for project development and production support. Linux OS u.sing 
+                            shell and terminal commands. SQL and non-SQL database creation such as MongoDB.
+                          </p>
+                          <a href="#cybersecurity" class="btn btn-primary position-absolute bottom-0 translate-middle">
+                            More information</a> <!--aqui puedo poner un 
+                            acordion con una descripcion breve de cada uno de estos puntos-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+   </section>
+   
+
+   <!--------------------------------------      Accordion     ----------------------------------->
+   <section id="cybersecurity" class="cybersecurity">
+        <div class="container-fluid p-5" style="background-color: #a2d0f0;">
+            <div class="display-5 text-center pb-5">Extra Projects and Interests</div>
+
+            <!--   begin of accordion-->
+            <div class="accordion" id="accordionExtras">
+
+                <!--CyberSecurity-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordionButton accordion-button" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      CyberSecurity Research
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" 
+                  data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordionText">
+                      <strong>Detection of cyber attacks based on logs and IP packets</strong> This project's objective
+                      is to capture a standarized dataset containing the metadata obtained by recording different 
+                      cyberattacks such as DoS and DDoS. To train a BERT-based text model and different others ML 
+                      models to identify in real time patterns of possible cyber attacks. Some of the technologies used 
+                      for the communication of the network were Oracle VM, Linux (Ubuntu and Kali), NodeJS and Postman for 
+                      API and endpoint creation and testing. MongoDB for storing the information obtained. Cisco T-Rex and 
+                      hping3 for creating attacks and normal flow of data. Python and JavaScript.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordionButton accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Project Management Skills
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" 
+                  data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordionText">
+                      <strong>Srum Master / Agile Framework / Management 3.o.</strong> 
+                      Throughout my time collaborating with the financial institution I had the oportunity of both, 
+                      studying and applying the concepts of Agile Framework and also Management 3.0. Because of this, 
+                      I am comfotable with using JIRA and having daily meetings. Also I know how to create user 
+                      Stories and assign story points. I am also comfortable with the principles of Management 3.0, 
+                      and I know how to differenciate teams where the methodology will work and where it will not have
+                      a positive impact on the project. I am also aware of how waterfall projects are developed and
+                      deployed, and when Waterfall is more convenient over Agile.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordionButton accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Code Storage and Version Control / Linux
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordionText">
+                      I am comfortable with using GIT and also GITHUB for storing different codes and 
+                      keeping a control of the versions during the develpment of an AI project. I know
+                      also the basic commands to navigate through Linux terminal create, modify and delete
+                      elements. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+   </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 </html>

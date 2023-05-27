@@ -1,0 +1,72 @@
+html *
+{
+   font-family: 'Times New Roman', Times, serif !important;
+}
+
+.name_banner{
+    font-size: 50px;
+    color: whitesmoke;
+    position: absolute;
+    top: 23%;
+    left: 7%;
+}
+
+.bannerImg{
+    position: relative;
+}
+
+.areas_interest{
+    max-width: 800px;
+    font-size: 25px;
+    color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+.aboutMe{
+    max-width: 800px; 
+    text-align:justify; 
+    font-size: 30;
+}
+
+.interestHeader{
+    font-size: 60px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.intcard{
+    width: 22rem;
+    height: 35rem;
+    margin: 0 auto;
+}
+
+.interestPar{
+    text-align:justify;
+}
+
+.card-header{
+    font-size: 25px;
+}
+
+.accordionButton{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accordionText{
+    font-size: 25px;
+}
+
+
+
+/* education */
+.name_baner_edu{
+    position: absolute; 
+    top: 60%; 
+    left: 40%; 
+    background-color: #1d80c7;
+}
+

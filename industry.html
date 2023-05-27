@@ -1,0 +1,402 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="ind_style.css">
+    <title>Industry Experience</title>
+</head>
+<body>
+
+    <!--  Banner  Top -->
+   <!--Nav bar-->
+   <nav class="navbar navbar-expand-md m-0 p-0">
+    <div class="container-fluid p-4" style="background-color: #000000;">
+       <a href="#intro" class="navbar-brand"></a>
+       <!--Toogle buuton for mobile-->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+       aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!----------------------- Navbar links ----------------------->
+
+       <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+           <ul class="navbar-nav">
+                <!-- DROPDOWN ELEMENT HOME-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" 
+                href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 150%
+                ">
+                  Home Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html#about">About Me</a></li>
+                  <li><a class="dropdown-item" href="index.html#interests">Interests</a></li>
+                  <li><a class="dropdown-item" href="index.html#cybersecurity">CyberSecurity and Extras</a></li>
+                </ul>
+              </li>
+               <li class="nav-item m-2 pe-2 border-end border-primary text-decoration-underline fw-bold text-white">
+                   <a href="industry.html" class="nav-link text-white" style="font-size: 150% ">
+                    Industry Experience</a>
+               </li>
+               <!-- DROPDOWN EDUCATION-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" href="#education" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 150%">
+                  Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="education.html">Masters</a></li>
+                  <li><a class="dropdown-item" href="education.html">Bacherlors</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="education.html">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="education.html">Teaching Assistant</a></li>
+                </ul>
+              </li>
+               <li class="nav-item  m-2 pe-2 border-end border-primary">
+                   <a href="projects.html" class="nav-link text-white" style="font-size: 150%">Projects</a>
+               </li>
+           </ul>
+       </div>
+    </div>
+   </nav>
+
+
+   <!---------------------------- Banner  -------------------------->
+   <header class="masterheader">
+    <div class="container-fluid bg-light m-0 p-0">
+        <div class="col">
+            <img src="Images/dock.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
+            <div class="name_banner_ind bg-light p-5 border-bottom border-dark border-5" 
+            style="position: absolute; top: 60%; left: 37%; font-size: 60px;">
+                Industry Experience
+            </div>
+        </div>
+   </div>
+   </header>
+
+   <!-------------------------  Job General Description   ---------------------------->
+   <section class="jobs" id="listJobs">
+        <div class="container-fluid bg-dark" style="padding-top: 15rem;" >
+
+            <!-- Data and Analytics-->
+            <div class="row justify-content-center align-items-center border-bottom border-light" 
+            style="padding-bottom: 7rem; margin-left: 250px; margin-right: 250px;">
+                <div class="col "><!-- data image-->
+                    <img src="/Images/data.png" style="max-height: 350px; float: right;" class="pe-5" >
+                </div>
+                <div class="col"> <!-- data content-->
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-body">
+                          <h1 class="card-title pb-3">Data & Analytics</h1>
+                          <h3 class="card-subtitle mb-2 text-muted pb-3">
+                            Data Science and Machine Learning focussing on financial risk
+                          </h3>
+                          <p class="card-text pb-2" style="font-size: 20px;">
+                            My job as Machine Learning Engineer and Tech Lead was guiding the team to 
+                            design and implement in production a Machine Learning model using Python and 
+                            Cloudera tools to automate an EUC. Click the button for details. 
+                          </p>
+                          <a href="#d&a" class="btn btn-primary">Projects' Description</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+            <!-- Teaching Assistant-->
+            <div class="row justify-content-center align-items-center border-bottom border-light" 
+            style="padding-bottom: 7rem; margin-left: 250px; margin-right: 250px; margin-top: 7rem;">
+                
+                <div class="col"> <!-- data content-->
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-body">
+                          <h2 class="card-title pb-3">Teaching Assistant at University of Ottawa</h2>
+                          <h5 class="card-subtitle mb-2 text-muted pb-3">
+                            Applications in AI for CyberSecurity / Analysis and Design of User Interfaces
+                          </h5>
+                          <p class="card-text pb-2" style="font-size: 18px;">
+                            During my Master, I had the opportunity of collaborating in two different
+                            lectures. In the first one I created assignments regarding collection and 
+                            analysis of data in real time, using Kafka and Dockers, to the train ML and DL 
+                            models (Online Learning). In the second lecure I was in charge of helping 
+                            and guiding students through the desing and implementation of a User Interface
+                            using HTML/CSS JavaScript (Bootstrap and React).
+                          </p>
+                          <a href="#" class="btn btn-primary">Projects' Description</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col "><!-- data image-->
+                    <img src="/Images/harvard.jpeg" style="max-height: 350px;  float: right;" >
+                </div>
+            </div>
+
+
+            <!-- Robotic Process Automation -->
+            <div class="row justify-content-center align-items-center border-bottom border-light" 
+            style="padding-bottom: 7rem; margin-left: 250px; margin-right: 250px; margin-top: 7rem;">
+                <div class="col "><!-- data image-->
+                    <img src="/Images/RPA.png" style="max-height: 350px; float: right;" class="pe-5" >
+                </div>
+                <div class="col"> <!-- data content-->
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-body">
+                          <h1 class="card-title pb-3">Robotic Process Automation</h1>
+                          <h3 class="card-subtitle mb-2 text-muted pb-3">
+                            Automate repetitive manual processes in complex financial analysis flows via bots
+                          </h3>
+                          <p class="card-text pb-2" style="font-size: 20px;">
+                            In this area, we analyzed the client's needs and sugested the optimal
+                            solution for them to automate their processes using bots. Our bots were
+                            programmed with Automation Anywhere and they lived within Virtual Machines.
+                          </p>
+                          <a href="#rpa" class="btn btn-primary">Projects' Description</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+
+            <!-- Enterprise Architecture -->
+            <div class="row justify-content-center align-items-center border-bottom border-light" 
+            style="padding-bottom: 7rem; margin-left: 250px; margin-right: 250px; margin-top: 7rem;">
+                
+                <div class="col"> <!-- data content-->
+                    <div class="card" style="width: 40rem;">
+                        <div class="card-body">
+                          <h2 class="card-title pb-3">Enterprise Architecture </h2>
+                          <p class="card-text pb-2" style="font-size: 18px;">
+                            During my first rotation in the "Citi Bank Technology Leadership Program", I
+                            collaborated together with the Architecture department. We were in charge 
+                            of verifying that the technologies and framewroks used in all projects were 
+                            correctly structured and their versions were safe for the Bank. In this area 
+                            I was in charge of validating Design Charters and automating processes using
+                            Visual Basic Analysis (VBA).
+                          </p>
+                          <a href="#arch" class="btn btn-primary">Projects' Description</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col "><!-- data image-->
+                    <img src="/Images/ARCH.png" style="max-height: 350px;  float: right;" >
+                </div>
+            </div>
+
+
+
+            <!-- Domotics Internship -->
+        <div class="row justify-content-center align-items-center border-bottom border-light" 
+        style="padding-bottom: 7rem; margin-left: 250px; margin-right: 250px; margin-top: 7rem;">
+            <div class="col "><!-- data image-->
+                <img src="/Images/DOM.png" style="max-height: 300px; float: right;" class="pe-5" >
+            </div>
+            <div class="col"> <!-- data content-->
+                <div class="card" style="width: 40rem;">
+                    <div class="card-body">
+                      <h1 class="card-title pb-3">Domotics Internship</h1>
+                      <p class="card-text pb-2" style="font-size: 20px;">
+                        This was an internship and my first job in a domotics enterprise. My responsibilities
+                         were designing the Audio Visual solution together with an architect. Afterwards 
+                         I started to program the devices to automate lights, audio and video. The devices
+                         used were Crestron and Lutron.
+                      </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+   <!----------------------------  Industry related projects --------------------->
+   <section class="industry_projects" id="projects_ind">
+        <div class="container-fluid" style="padding-top: 5rem; background-color: #a2d0f0;" >
+
+            <div class="display-3 fw-bold text-center" style="padding-bottom: 7rem;">
+                Industry Projects' Description
+            </div>
+
+            <div class="row" style="margin-left: 250px; margin-right: 250px;">
+
+                <div class="col me-5"><!-- left column-->
+                    <!--  Project DA1  -->
+                    <h3 class="title" id="d&a">Data & Analytics</h3>
+                    <h3 class="title">Project 1</h3>
+                    <p class="par_proj2">
+                        The purpose of this project was to process batch information from the client stored 
+                        in HUE database and using a pre-trained Gradient Boosting model determine whether 
+                        that specific client should have a payroll loan. Technologies used are Python, 
+                        Cloudera, HUE as database, Spark, Autosys as the scheduler. We also made use of
+                        Agile methodology reporting all steps in JIRA and storing the code in a private
+                        GIT. </p>
+                    
+                    <img src="Images/DA1.png" style="max-width: 520px;" class="my-3">
+
+                    <p class="par_proj">
+                        My role in this project was first a developer, 
+                        translating code from SAS to Python and Spark, but then I became tech lead, 
+                        I was in charge of administrating together with the PM the activities of the 
+                        developers and have meeting with other areas to ensure the correct deployment 
+                        of the product to production servers.
+                    </p>
+
+
+                    <!--  Project DA3  -->
+                    <h3 class="title" >Data & Analytics</h3>
+                    <h3 class="title">Project 3</h3>
+                    <p class="par_proj2">
+                        The purpose of this project was to use supervised learning in batch to process once 
+                        a month, information from 11 million clients and store the result obtained from a 
+                        Gradient Boosting algorithm, storing the information in Hue Database and then 
+                        into Mongo DB to be consumed by other areas.</p>
+
+                    <img src="Images/DA3.jpeg" style="max-width: 550px;" class="my-3">
+
+                     <p class="par_proj">
+                        For this project my team and I created a series of Data Quality Rules 
+                        (DQRs) to ensure the data was clean and ready to process. Afterwards I was chosen to 
+                        be the L3 support engineer for the complete pipeline which was the most challenging
+                        part.
+                    </p>
+
+
+                    <!--  Project RPA1  -->
+                    <h3 class="title" id="rpa">Robotic Process Automation</h3>
+                    <h3 class="title">Project 1</h3>
+                    <p class="par_proj2">
+                        This project was aimed to reduce the time branch officers invested into checking information 
+                        of specific clients when they requested for a loan. Here we used Automation 
+                        Anywhere to create bots that based on data from the customer performed a lookup in 
+                        different systems and databases to obtain all information and leave it handy for the 
+                        officer. </p>
+                    
+                    <img src="Images/RPA1.png" style="max-width: 520px;" class="my-3">
+
+                    <p class="par_proj">
+                        My duties here were to program in Automation Anywhere several bots to look 
+                        for the information in different systems. But the most difficult part was asking for 
+                        permission from the owner of the system to allow the bots enter and look for 
+                        information as if it was a user. So me and my team needed to make sure the bot 
+                        complied with all the bank's politics. 
+                    </p>
+
+
+
+                    <!--  Project Arch  -->
+                    <h3 class="title" id="arch">Enterprise Architecture</h3>
+                    <h3 class="title">Project 1</h3>
+                    <img src="Images/ARCH.png" style="max-width: 520px;" class="my-3">
+                    <p class="par_proj">
+                        This area was in charge of validating that all technological projects use the 
+                        optimal combination of technologies and systems. My job here was to keep record of 
+                        each project and help project managers deal with deadlines. I programed a series of 
+                        automated mails whose trigger was based on a platform path.
+                    </p>
+                    
+
+
+                </div>
+
+
+                <!---------------------- right column ------------------------->
+                <div class="col ms-5 ps-5">
+                    <!--  Project DA2  -->
+                    <h3 class="title">Data & Analytics</h3>
+                    <h3 class="title">Project 2</h3>
+                    <p class="par_proj2">
+                        This project was my first baby. It started with a POC and with me acting as a 
+                        Business Analyst, understanding its needs. The project 
+                        consisted in analysing excel files and passing them to a HDFS platform in Hadoop. 
+                        Once there, they were used to feed a Random Forest each 6 months to create a model capable of predicting
+                        which clients who were initially rejected for getting a personal loan, should be 
+                        reconsidered for a smaller loan. This project was done using Python and Cloudera.
+                    </p>
+                    <img src="Images/DA2.png" style="max-width: 520px;" class="my-3">
+                    <p class="par_proj">
+                        My rol in this project was first as Business Analyst, to understand our client's 
+                        needs. Then programmer to prepare the data for extraction, variable selection, feature engineering 
+                        and model training. My final role was being the Tech Lead to load the solution into a productive 
+                        server.
+
+                    </p>
+
+
+                    <!--  Project DA4  -->
+                    <h3 class="title">Data & Analytics</h3>
+                    <h3 class="title">Project 4</h3>
+                    <p class="par_proj2">
+                        The purpose of this project was to use a Machine Learning model to classify 
+                        different geographical locations within Mexico City based on the quantity of 
+                        business that are around to better plan opening or closing a branch office or ATM 
+                        locations. For this project we used Autosys, Python, Cloudera tools such as HUE and 
+                        Tableau.
+                    </p>
+                    <img src="Images/DA4.png" style="max-width: 520px;" class="my-3">
+                    <p class="par_proj">
+                        This project was my second baby. When I got there, the model was already created but 
+                        I had to optimize the code, as it took more than 7 hours to run. Also make sure the 
+                        data that was ingested meet all the security standards for being stored in a safe 
+                        data base. Also I was in charge as Tech Lead to organize the correct communication 
+                        with Tableau for showing results and prepare the productive server to safely store 
+                        raw and processed data, together with the algorithm.
+                    </p>
+
+
+                    <!--  Project RPA2  -->
+                    <h3 class="title">Robotic Process Automation</h3>
+                    <h3 class="title">Project 2</h3>
+                    <img src="Images/RPA2.jpeg" style="max-width: 520px;" class="my-3">
+                    <p class="par_proj">
+                        This project was done to decrease the risk of an EUC, or a manual process. It 
+                        gathered information from different excel files and concatenate them into a 
+                        single file. Then store it inside a secure system to be consumed by the users.
+                        My rol in this project was to code using Automation Anywhere the merging process. 
+                        After the project was done it was my responsibility to train over 300 users all 
+                        around the country. So I did a series of video tutorials with examples and the most 
+                        relevant information on how to interact with the bot.
+                    </p>
+                    
+
+
+                    <!--  Project Prod Support  -->
+                    <h3 class="title" id="ps">Production Support</h3>
+                    <h3 class="title">Project 1</h3>
+                    <img src="Images/ProdSup.png" style="max-width: 520px;" class="my-3">
+                    <p class="par_proj">
+                        The area was responsible to give 3 levels of support to critic applications inside 
+                        the bank. I was a Level 2 support engineer, and my job was to monitor alerts in a 
+                        platform and try to solve the problem ASAP, otherwise it should be esalated with 
+                        the level 3 support engineer.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+   </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

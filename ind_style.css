@@ -1,0 +1,19 @@
+html *
+{font-family: 'Times New Roman', Times, serif !important;}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.par_proj2{
+    text-align: justify;
+    font-size: 25px;
+}
+
+.par_proj{
+    text-align: justify;
+    font-size: 25px;
+    margin-bottom: 7rem;
+}

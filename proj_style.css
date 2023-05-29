@@ -24,7 +24,10 @@ html *
     height: 500px;
     background-size: cover;
     padding-right: 0;
-    margin: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem; 
     
     background-repeat: no-repeat;
 }
@@ -33,7 +36,10 @@ html *
     height: 500px;
     background-size: cover;
     padding-right: 0;
-    margin: 10rem; 
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 2rem; 
     background-repeat: no-repeat;
 }
 
@@ -41,4 +47,19 @@ html *
     position: relative;
     left: 300px;
     font-size: 20px;
+}
+
+.desc_title{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.desc_body{
+    text-align: justify;
+    font-size: 25px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }

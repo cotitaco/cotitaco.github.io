@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="edu_style.css">
     <title>Education</title>
 </head>
 <body>
@@ -52,11 +53,11 @@
                   Education
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Masters</a></li>
-                  <li><a class="dropdown-item" href="#">Bacherlors</a></li>
+                  <li><a class="dropdown-item" href="#edu">Masters</a></li>
+                  <li><a class="dropdown-item" href="#edu">Bacherlors</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Volunteering</a></li>
-                  <li><a class="dropdown-item" href="#">Teaching Assistant</a></li>
+                  <li><a class="dropdown-item" href="#vol">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="#ta">Teaching Assistant</a></li>
                 </ul>
               </li>
                <li class="nav-item  m-2 pe-2 border-end border-primary">
@@ -80,7 +81,8 @@
     <div class="container-fluid bg-light m-0 p-0">
         <div class="col">
             <img src="Images/mountine.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
-            <div class="name_banner_edu fs-1 bg-light p-5 border-bottom border-dark border-2 border-top m-1">
+            <div class="name_banner_edu fs-1 bg-light p-3 border-bottom border-dark border-2 border-top m-1"
+            id="edu">
                 Education 
             </div>
         </div>
@@ -88,8 +90,180 @@
    </header>
 
 
+   <!---------------------------------------School rotating cards --------------------------------------->
+   <section class="schools">
+    <div class="container-fluid bg-dark">
+      <h5 class="text-white" style="padding-top: 2rem;">
+        Please hoover over the images to know more about my academic backgroud
+      </h5>
+      <div class="row" style="padding-top: 2rem; padding-bottom: 6rem;">
+        <div class="col ms-5">
+          <!-- Rotating card uOttawa -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/Images/uottawa.avif"  style="width:600px;height:400px;">
+                <h4 class="font-weight-bold mb-3">uOttawa</h4>
+                 <p class="font-weight-bold blue-text">Masters Degree</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>Computer Science with Concentration in Artificial Intelligence</h1>
+                <p>Class of 2023</p>
+                <p>Relevant Lectures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Rotating card itesm -->
+        <div class="col">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/Images/items.jpeg"  style="width:600px;height:400px;">
+                <h4 class="font-weight-bold mb-3">Tecnologico de Monterry</h4>
+                 <p class="font-weight-bold blue-text">Bacherlors Degree</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>Electronics and Telecommunication Engineering</h1>
+                <p>Class of 2016</p>
+                <p>Relevant Lectures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+   </section>
+
+
+   <!----------------------------------------------- Volunteering ----------------------------------------->
+   <div class="containder-fluid" style="background-color: #a2d0f0;">
+    <div class="row" style="padding-top: 2rem; text-align: center; padding-bottom: 3rem;">
+      <h1 class="pb-3" id="vol">Volunteering</h1>
+    </div>
+
+    <div class="row mx-5">
+      <h2>Heart Of the City Piano Program Ottawa</h2>
+      <p>This is a volunteering student association present in multiple cities around Canada. Our main
+        mission is to provide elementary school kids with quality piano lessons for free. Our volunteers
+        are in charge of coordinating with schools and also providing the piano lessons both online and 
+        in person. Our association also plans Coffee houses every term, where more volunteers do 
+        casual performances and we ask for sponsorships to raise founds and buy books and insentives 
+        for our students. 
+      </p>
+    </div>
+
+    <div class="row" style="margin-left: 10rem; margin-top: 6rem;">
+      <div class="col">
+        <div class="card" style="width: 25rem;">
+          <img src="/Images/hcpp.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">School Coordinator</h5>
+            <p class="card-text pb-1">
+              I am coordinating only 2 schools, my rol here is to make sure volunteers and teachers can 
+              be together with the kids at the same time and schedule the classes according to their 
+              schedules. Furthermore, my other responsabilities are to keep constant communication with 
+              volunteers and make sure they have all the materials needed for their classes, as well as 
+              let the teachers know when they will be absent.
+            </p>
+            <h5>Executive Member</h5>
+            <p>
+              In this position my responsabilities are to help organize events such as the coffee houses, 
+              promote our values inside and outside the school and look for new volunteers. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 25rem;">
+          <img src="/Images/hcpp2.png" class="card-img-top" >
+          <div class="card-body">
+            <h5 class="card-title">Piano Teaching Volunteer</h5>
+            <p class="card-text">
+              This position is easier. I teach virtually a group of elementary school kids the basics
+              of piano interpretation and also the elements of music theory. We have a weekly 20 min 
+              session where I use different tools to explain the topics with pedagogical methods. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
 
     
+
+   <div class="containder-fluid" style="background-color: #040505;">
+    <div class="row" style="padding-top: 2rem; text-align: center; padding-bottom: 3rem;">
+      <h1 class="pb-3" id="ta" style="color: antiquewhite;">Teaching Assistant Experience</h1>
+    </div>
+  </div>  
+
+
+  <div class="row" style="padding-top: 2rem; padding-bottom: 6rem; background-color: #040505;">
+        <div class="col ms-5">
+          <!-- Rotating card Cybersecurity -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/Images/cybersecurity2.jpeg"  style="width:600px;height:300px;">
+                <h4 class="font-weight-bold mb-3">Applications of AI in Cybersecurity</h4>
+                 <p class="font-weight-bold blue-text">Corrector and Teaching Assistant</p>
+              </div>
+              <div class="flip-card-back">
+                <h2>Applications of AI in Cybersecurity</h2>
+                <p style="font-size: 18px; text-align: justify; margin: 2rem;">I work two years as corrector and TA on this class with approximately 160 students
+                  from all around the world. While I was corrector my job was to grade reports and also 
+                  an activity which included the analysis and cleaning of data, together with the training
+                  of several ML and DL models for predicting cyber attacks. While I was TA, my 
+                  responsabilities grew, so I had to desing an activity in which students used kafka and 
+                  dockers to simulate a real continuous flow of information and compare the results of 
+                  training both a dynamic model (changes with time) and a static model (is only 
+                  trained once). As well as having office hours to help students with their final projects
+                  and the assignments. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Rotating card Interface -->
+        <div class="col">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/Images/UID.png"  style="width:500px;height:300px;">
+                <h4 class="font-weight-bold mb-3">Analysis and Design of User Interfaces</h4>
+                 <p class="font-weight-bold blue-text">Teaching Assistant</p>
+              </div>
+              <div class="flip-card-back">
+                <h2>Analysis and Design of User Interfaces</h2>
+                <p style="font-size: 18px; text-align: justify; margin: 2rem;">During my last term as 
+                  masters student I was provided with the oportunity of 
+                  helping a professor with this lecture. My responsabilities were simple, I had to give
+                  once a week a laboratory and help students (one-on-one) with specific doubts regarding
+                  the whole desing and analysis process. There were around 140 students and I helped them
+                  with questions regarding design, mockups, HTML, CSS, basic JavaScript, implementation with 
+                  Bootstrap and also React. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 

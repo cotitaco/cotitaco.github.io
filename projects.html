@@ -13,7 +13,7 @@
 
     <!--  Banner  Top -->
    <!--Nav bar-->
-   <nav class="navbar navbar-expand-md m-0 p-0">
+   <nav class="navbar navbar-expand-md m-0 p-0 fixed-top">
     <div class="container-fluid p-4" style="background-color: #000000;">
        <a href="#intro" class="navbar-brand"></a>
        <!--Toogle buuton for mobile-->
@@ -33,7 +33,7 @@
                 href="#" id="navbarDropdown" role="button" 
                 data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%
                 ">
-                  Home Dropdown
+                  Home
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="index.html#about">About Me</a></li>
@@ -81,7 +81,7 @@
    <header class="masterheader">
     <div class="container-fluid bg-light m-0 p-0">
         <div class="col">
-            <img src="Images/lake.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
+          <img src="Images/lake.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
             <div class="name_banner_ind display-5 p-5 fw-bold" 
             style="position: absolute; top: 25%; left: 60%; background-color: rgba(240, 255, 255, 0.3);">
                 Projects and Research
@@ -99,18 +99,34 @@
       <!-----------------------------------------    First row -------------------------------------->
       <div class="row justify-content-center align-items-center border-bottom border-light bg-dark">
         <!--------------------------- Left column -------------------------->
+        <!-- Voting -->
+        <div class="col cuadroL" style="background-image: url(Images/cyberSecBanner.jpeg);">
+          <p class="proj_title">Voting Algorithm for DoS attack prediction combining
+            BERT for log analysis and Random Forest for IP packet analysis
+          </p>
+          <p class="proj_desc">Cyber Security, BERT, LLG, ML, linux system logs, IP packets, Random Forest
+            Classifier,  </p>
+          <a href="cyberSecurity.html" type="button" class="btn info_btn btn-info">More Info on project</a>
+        </div>
+        
+
+      <!-----------------------------------------    Second row -------------------------------------->
+      <div class="row justify-content-center align-items-center border-bottom border-top border-light bg-dark">
+
+        <!--------------------------- Left column -------------------------->
         <!-- streams -->
         <div class="col cuadroL" style="background-image: url(Images/stream.jpeg);">
           <p class="proj_title">Analyzing data streams to prevent DNS attacks</p>
           <p class="proj_desc">Cyber Security, ML, DL, Kafka, Dockers</p>
-          <a href="#kafka_streams" type="button" class="btn info_btn btn-info">More Info Streams</a>
+          <a href="Kafka.html" type="button" class="btn info_btn btn-info">More Info Streams</a>
         </div>
         <!-------------------------- Right column --------------------------->
           <!-- GANs -->
         <div class="col cuadroR" style="background-image: url(Images/monet.jpeg);" id="gans1">
-          <p class="proj_title">Data Augmentation via sketches comparing cGANs and CycleGANs</p>
+          <p class="proj_title">Comparison of cGANs vs CycleGANs for Image
+            Augmentation by Sketching</p>
           <p class="proj_desc">cGAN, CycleGAN, Data Augmentation</p>
-          <a href="#monet" type="button" class="btn info_btn btn-info">More Info GANs</a>
+          <a href="GANs.html" type="button" class="btn info_btn btn-info">More Info GANs</a>
         </div>
         </div>
       </div>
@@ -120,7 +136,7 @@
 
 
 
-      <!----------------------------------------- Second row -------------------------------------->
+      <!----------------------------------------- Third row -------------------------------------->
       <div class="row justify-content-center align-items-center border-bottom border-light bg-dark">
         <!--------------------------- Left column -------------------------->
         <!-- GCP -->
@@ -143,14 +159,14 @@
 
 
 
-      <!----------------------------------------- Third row -------------------------------------->
+      <!----------------------------------------- Fourth row -------------------------------------->
       <div class="row justify-content-center align-items-center bg-dark">
         <!--------------------------- Left column -------------------------->
         <!-- BERT -->
         <div class="col cuadroL" style="background-image: url(Images/nlp.jpeg);" id="bert1">
           <p class="proj_title">StoryPoints and time Estimation on Technology Projects using NLP and BERT</p>
           <p class="proj_desc">NLP, BERT, Agile, UserStories, StoryPoints</p>
-          <a href="#agile" type="button" class="btn info_btn btn-info">More Info NLP</a>
+          <a href="StoryPoints.html" type="button" class="btn info_btn btn-info">More Info NLP</a>
         </div>
         <!-------------------------- Right column --------------------------->
           <!-- KD -->
@@ -158,7 +174,7 @@
           <p class="proj_title">Improving Lottery Ticket Hypothesis with Knowledge Distillation
           </p>
           <p class="proj_desc">DL LTH Knowledge Distaillation NMIST</p>
-          <a href="#kd" type="button" class="btn info_btn btn-info">More Info LTH/KD</a>
+          <a href="lottery.html" type="button" class="btn info_btn btn-info">More Info LTH/KD</a>
         </div>
         </div>
       </div>
@@ -173,56 +189,7 @@
   <!------------------------------------------  Projects' descriptions ---------------------------------->
   <section class="projects_desc">
     <div class="container-fluid" style="padding-top: 0rem; background-color: #a2d0f0;">
-      <!-- Streams -->
-      <div class="row justify-content-center align-items-center background-color: #a2d0f0;
-      border-bottom: #000000;" id="kafka_streams">
-        <h3 class="desc_title">
-          Analyzing data streams to prevent DNS attacks
-        </h3>
-        <p class="desc_body">
-          The purpose of this project was to simulate a real flow of constant data and dynamically 
-          train a ML or DL model based on this data. When I say dynamically I mean to use time windows
-          and evaluate every x time the performance of our model. If the performace metric goes below a 
-          threshold, then we will re-train the model. For this, I created a docker instance which already had 
-          kafka server. Then I used the API in python to read the incoming data, train my model and keep 
-          analyzing the performance metrics to decide whether it is necessary to retrain the model and keep on
-          working on an "Online-learning" way or if it is better to do batch- learning. For more details please
-          contact me directly. 
-        </p>
 
-      </div>
-      <a href="https://medium.com/@rledesma.itesm/a-magical-day-at-disney-kafka-edition-part-1-introduction-to-data-streams-c425f8a396c3" 
-      type="button" class="btn btn-primary btn-lg" target="_blank" style="position: absolute; left: 45%;
-      ">
-        Tutorial
-      </a>
-
-
-
-      <!-- GANs -->
-      <div class="row justify-content-center align-items-center" id="monet">
-        <h3 class="desc_title">
-          Data Augmentation via sketches comparing cGANs and CycleGANs
-        </h3>
-        <p class="desc_body">
-          This project is a derivation of a problem when training Generative Adversarial Networks to generte 
-          images with conditioning inputs. In this example I am training a cGAN (conditional GAN) to transform
-          a monocromatic sketch into an Impressionist-like painting, as if Van Gogh or Monet has painted it.
-          Now what is the problem I found. During that time period, Impressionist artist did not painted 
-          castles. So obviously when I input a sketch of a landscape with a castle, the GAN will output
-          something like a mount or a mountine. To handle this problem I then compared the efficiency of
-          a conditional GAN and a CycleGAN to generate Impressionist castles based on a few examples I could 
-          find online. To train my models, I downloaded only 50 Impressionist-like castles, and then I 
-          transformed these images into sketches to have the condition. Then after only training them with 50 
-          pairs of images, I asked the models to generate thousands of castle examples. For more information 
-          in this type of Data Augmentation please contact me.
-        </p>
-
-      </div>
-      <a href="https://github.com/cotitaco/CycleGans_vs_CGans_for_dataAugmentation" 
-      type="button" class="btn btn-primary btn-lg" target="_blank" style="position: absolute; left: 45%;">
-        Code in GitHub
-      </a>
 
 
 
@@ -233,11 +200,11 @@
           Online Prediction Service. Time Series prediction on the cloud
         </h3>
         <p class="desc_body">
-          This project's objetive is to learn how to host a model online using Google Cloud 
+          This project aims to learn how to host a model online using Google Cloud. 
           Platform. This is part of a bigger project in which I extract data from a web page and 
-          use it to calculate how long if would take for a visitor to ride a rollercoaster in an 
-          amusement park. In this specific case I give a full tutorial on GCP on how to create the 
-          necesary elements to host a pre-trained machine learning model and query it from anywhere
+          use it to calculate how long it would take for a visitor to ride a rollercoaster in an 
+          amusement park. In this specific case, I give a full tutorial on GCP on how to create the 
+          necessary elements to host a pre-trained machine learning model and query it from anywhere
           around the world.
         </p>
 
@@ -256,12 +223,12 @@
           Waiting Time predictions in amusement parks using Data Science Machine / Deep Learning
         </h3>
         <p class="desc_body">
-          This was one of my favorite projects. The main objective is to predict based on certain features
-          how long it would take for an average park visitor to ride its favorite rollercoaster. This is 
+          This was one of my favourite projects. The main objective is to predict, based on specific features
+          , how long it would take an average park visitor to ride their favourite rollercoaster. This is 
           a complete project as it involves data scrapping, data analysis and data science, a deep
-          understanding of classical machine learning algorithms, also the understanding of deep learning 
-          algorithms such as Multilayer Perceptrons and Recurrent Neural Networks to name a few examples.
-          You can see my full tutorials and my results together with all the code I did below.
+          understanding of classical machine learning algorithms, and the understanding of deep learning 
+          algorithms such as Multilayer Perceptrons and Recurrent Neural Networks, to name a few examples.
+          You can see my complete tutorials and results, together with all the code I did, below.
         </p>
 
       </div>
@@ -278,95 +245,45 @@
         </a>
     </div>
 
-
-
-
-    <!-- Agile -->
-    <div class="row justify-content-center align-items-center background-color: #a2d0f0;" id="agile">
-      <h3 class="desc_title">
-        StoryPoints and time Estimation on Technology Projects using NLP and BERT
-      </h3>
-      <p class="desc_body">
-        If you have been working on the technology and AI sector, you will be familiar with waterfall and 
-        Agile frameworks. You know how tedious it is to spend hours with your team deciding how many 
-        story points a user story will have. Because you know that time you lost will have to be taken
-        from any other activities. In this project we used a dataset which contains a couple thousand 
-        user stories from a single company. And we trained different versions of BERT to perform a 
-        classification prediction of how many user stories should be assigned to that user story, based
-        on the features extracted by the model. In this project we also tested how good this dataset is 
-        to predict the time each activity will take. For more details please contact me. 
-      </p>
-
-    </div>
-
-    <div class="col-md-12 text-center">
-      <a href="https://github.com/cotitaco/Agile-estimation-with-BERT" 
-      type="button" class="btn btn-primary btn-lg" target="_blank">
-        Notebooks and data in Git
-      </a>
-  </div>
-
-
-
-
-
-  <!-- kd -->
-  <div class="row justify-content-center align-items-center background-color: #a2d0f0;" id="kd">
-    <h3 class="desc_title">
-      Improving Lottery Ticket Hypothesis with Knowledge Distillation
-    </h3>
-    <p class="desc_body">
-      In 2018, Dr Hinton together with a group of researchers published a intriging paper which 
-      described a prunning technique for dense neural networks. This technique called Lottery Ticket 
-      Hypothesis consisted of reducing the links between some neurons my creating masks and finding 
-      an optimal sparse sub network which can perform predictions as good as the original and in some 
-      cases even better. In our research my team and I combined this technique with knowledge distillation 
-      which consists of having a dense teacher model, which will train a studend model which is smaller ( may
-      have a different and smaller architecture or could be a trimmed version of the same arch). And now 
-      train the student with respect to the the labels that the teacher gives. To learn more about our
-      process and results please contact me. 
-    </p>
-
-  </div>
-
-  <div class="col-md-12 text-center">
-    <a href="https://github.com/cotitaco/KnowledgeDistillation/blob/main/LoteryTicket_knowledgeDistillation.ipynb" 
-    type="button" class="btn btn-primary btn-lg" target="_blank">
-      Notebooks and data in Git
-    </a>
-</div>
-
-
-
-
-<!-- kd -->
-<div class="row justify-content-center align-items-center background-color: #a2d0f0;" id="html">
-  <h3 class="desc_title">
-    Analysis and Design of User Interfaces
-  </h3>
-  <p class="desc_body">
-    There is not a lot to say about this, as stated in my academic session I was TA for this lecture and 
-    long story short this whole web page is created froms scratch using HTML/CSS and specifically 
-    Bootstrap you can find the code in the button below or you can take a peak by inspecting it 
-    within the browser. To make my web page public, I chose to host it using also hithub. For more 
-    information please contact me. 
-  </p>
-
-</div>
-
-<div class="col-md-12 text-center">
-  <a href="https://github.com/cotitaco/cotitaco.github.io" 
-  type="button" class="btn btn-primary btn-lg" target="_blank">
-    Code in GitHub
-  </a>
-</div>
-
     
-
     </div>
   </section>
     
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
 
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/rodrigocledesmag/" role="button">Linkedin</a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cotitaco" role="button">Github</a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ledesmagarces/" role="button">Instagram</a>
+
+          <!-- Medium -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://medium.com/@rledesma.itesm" role="button">Medium blog</a>
+
+
+      </section>
+      <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: Rodrigo Ledesma.
+      <p>Banner pictures were taken and edited by me. This whole website was build from scratch
+        using HTML/CSS and Bootstrap
+      </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
     crossorigin="anonymous"></script>

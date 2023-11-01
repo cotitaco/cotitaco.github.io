@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="CyberSec_style.css">
+    <title>Projects and Research</title>
+</head>
+<body>
+
+    <!--  Banner  Top -->
+   <!--Nav bar-->
+   <nav class="navbar navbar-expand-md m-0 p-0 fixed-top">
+    <div class="container-fluid p-4" style="background-color: #000000;">
+       <a href="#intro" class="navbar-brand"></a>
+       <!--Toogle buuton for mobile-->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+       aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!--Navbar links-->
+
+       <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+           <ul class="navbar-nav">
+                <!-- DROPDOWN ELEMENT HOME-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" 
+                href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%
+                ">
+                  Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html#about">About Me</a></li>
+                  <li><a class="dropdown-item" href="index.html#interests">Interests</a></li>
+                  <li><a class="dropdown-item" href="index.html#cybersecurity">CyberSecurity and Extras</a></li>
+                </ul>
+              </li>
+               <li class="nav-item m-2 pe-2 border-end border-primary text-white">
+                   <a href="industry.html" class="nav-link text-white" style="font-size: 120% ">
+                    Industry Experience</a>
+               </li>
+               <!-- DROPDOWN EDUCATION-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" href="#education" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%">
+                  Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="education.html#edu">Masters</a></li>
+                  <li><a class="dropdown-item" href="education.html#edu">Bacherlors</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="education.html#vol">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="education.html#ta">Teaching Assistant</a></li>
+                </ul>
+              </li>
+               <li class="nav-item  m-2 pe-2 border-end border-primary">
+                   <a href="projects.html" class="nav-link text-white text-decoration-underline fw-bold" 
+                   style="font-size: 120%">Projects</a>
+               </li>
+           </ul>
+           <!--  Right  -->
+           <div class="collapse navbar-collapse justify-content-end align-center">
+              <a class="btn btn-outline-primary" type="submit" href="/documents/Academic CV Canada.pdf"
+                target="_blank">
+                Download CV
+              </a>
+          </div>
+
+       </div>
+    </div>
+   </nav>
+
+
+   <!-- Banner  -->
+   <header class="masterheader">
+    <div class="container-fluid bg-light m-0 p-0">
+        <div class="col">
+            <img src="Images/lake.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
+            <div class="name_banner_ind display-5 p-5 fw-bold" 
+            style="position: absolute; top: 25%; left: 60%; background-color: rgba(240, 255, 255, 0.3);">
+                Projects and Research
+            </div>
+        </div>
+   </div>
+   </header>
+
+  
+  <!-------------------------------- Graduation Project Description -------------------------->
+  <section class="kafka_proj" id="kafka_project">
+    <div class="container-fluid bg-light" style="padding-top: 0rem;">
+
+
+      <!-----------------------------------------    First row -------------------------------------->
+      <div class="row justify-content-center align-items-left border-bottom border-light bg-dark">
+        <h1 class="grad_title">
+          Principles of online learning in cyberSecurity with Machine Learning and Kafka
+        </h1>
+
+        <h2 class="sub">Role</h2>
+        <h4 class="desc">
+          While TAing for the AI in cybersecurity lecture, I was asked to create a project for the 
+          students to practice online learning with a continuous flow of constant information. In 
+          this case, I had to work by myself.
+        </h4>
+
+        <h2 class="sub">Problem</h2>
+        <h4 class="desc">
+          For this exercise, I was asked to create a service which could be hosted locally (within 
+          the computer of each student). This service should be able to provide a continuous flow
+          of data extracted from a CSV file, which would then be read using Python. This flow of data
+          will be locally stored in packets of 10,000 rows. This packet will first be used to train a 
+          base Machine Learning model. This first model will be used as a baseline. As the flow of information 
+          continues, the data set will keep coming, and we will be overwriting the first packet with new 
+          unseen information.
+        </h4>
+
+        <h4 class="desc">
+          This second packet will be used for two purposes: first, to test the base model and obtain the 
+          performance metrics. Second, to re-train our base model and create a second model whose metrics
+          will be compared with the base. This process will be continuously repeated until the flow of 
+          information comes to an end. Once the flow is over, we will compare the performance of the base 
+          model, which was never re-trained, with the version of the continuously re-train model.
+        </h4>
+
+        <h4 class="desc">The original purpose of this paper was to propose a novelty solution to 
+          DNS attacks, and if you want to read more about the topic, please click on the following 
+          <a href="https://www.unb.ca/cic/datasets/dns-exf-2021.html">link to article</a>
+        </h4>
+
+        <h4 class="desc">
+          Related to the article, it is essential to mention that for this exercise, we used part of
+          the "CIC-Bell-DNS-EXF-2021 Dataset," which was created by exfiltrating of sending 
+          different files with variable sizes, making use of the DNS vulnerability mentioned before. 
+          The dataset contains 15 features and a target variable, indicating whether the data point 
+          is an attack or benign. Of course, the objective of the exercise was to create an ML model
+          which will be able to discriminate between attacks and regular traffic, updating a model 
+          when it is most beneficial.
+        </h4>
+
+        <h2 class="sub">Solution</h2>
+        <h4 class="desc">
+          To simulate the continuous flow of information, I used a Docker Container, which is 
+          pre-configured to perform this exact action. The service I used was based on Kafka, and the 
+          exact image is image: wurstmeister/kafka. This is beneficial as we can use this container 
+          locally and query the information locally. I wrote a complete tutorial on how to
+          configure the service in dockers and also how to create the Python scripts to make 
+          use of the data. If you want to look into more detail, please click the following.
+          <a href="https://medium.com/@rledesma.itesm/a-magical-day-at-disney-kafka-edition-part-1-introduction-to-data-streams-c425f8a396c3">link to my blog</a>
+        </h4>
+
+        <h4 class="desc">
+          The image below shows an example of how the consumer runs within a Jupyuter notebook
+          and how the information is sequentially sent and printed.
+        </h4>
+        <img src="Images/kafkaConsumer.png" style="max-width:80%;">
+
+          <h4 class="desc">
+            For this excercise I decided the make some basic assumptions: 
+            <ul>
+              <li>
+                As my dataset was unbalanced, 
+                I will track the F1 score of both models, the base and the dynamic model.
+              </li>
+              <li>I will be using a fixed-size window of sequential elements, in this case, and as 
+                I also mentioned before that I will be creating batches of data of size 10,000. 
+                Each time I receive 10,000 new elements, I will pause the reception, and I will take 30%
+                of that data, then evaluate both of my models. And decide then if I should retrain my
+                dynamic model. 
+              </li>
+              <li>I need a threshold to decide if my dynamic model needs to be retrained after each 
+                window. For this, as mentioned before, I will be analyzing the F1 score of the models.
+                I have decided that if the metric is consistently below 70% for two consecutive
+                iterations, I will retrain the model. (this was a decision made by trying different 
+                combinations of percentages and several continuous fails)
+               </li>
+               <li>
+                Another assumption I will make is the number of features I will use. For this, I first
+                tried using all the variables but then performed a feature selection with the Pearson
+                Correlation method and test with the base model, how many top features made my model
+                perform the best. The winning combination was discovered using 9 of the 15 top 
+                features.  
+               </li>
+               <li>
+                The last assumption I will make will be my model. So, for this case, I tried training 
+                only three models: A Decision Tree Classifier, a Random Forest Classifier and a GBoost
+                Binary Classifier
+               </li>
+               
+            </ul>
+          </h4>
+
+        <h2 class="sub">Impact</h2>
+
+        After 100 iterations, I concluded that the GBoost Classifier offered the best performance.
+        And in the image below, you can appreciate the behaviour of both models. As it can be appreciated,
+        the dynamic model is slightly more stable even when the values fluctuate only 0.005%.
+
+        <img src="Images/kafkaResult.png" style="max-width:60%;">
+
+
+        <h2 class="sub">Code and Further Information</h2>
+
+        <h4 class="desc">
+
+        </h4>
+        
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/rodrigocledesmag/" role="button">Linkedin</a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cotitaco" role="button">Github</a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ledesmagarces/" role="button">Instagram</a>
+
+          <!-- Medium -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://medium.com/@rledesma.itesm" role="button">Medium blog</a>
+
+
+      </section>
+      <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: Rodrigo Ledesma.
+      <p>Banner pictures were taken and edited by me. This whole website was build from scratch
+        using HTML/CSS and Bootstrap
+      </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

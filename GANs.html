@@ -1,0 +1,313 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="CyberSec_style.css">
+    <title>Projects and Research</title>
+</head>
+<body>
+
+    <!--  Banner  Top -->
+   <!--Nav bar-->
+   <nav class="navbar navbar-expand-md m-0 p-0 fixed-top">
+    <div class="container-fluid p-4" style="background-color: #000000;">
+       <a href="#intro" class="navbar-brand"></a>
+       <!--Toogle buuton for mobile-->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+       aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!--Navbar links-->
+
+       <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+           <ul class="navbar-nav">
+                <!-- DROPDOWN ELEMENT HOME-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" 
+                href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%
+                ">
+                  Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html#about">About Me</a></li>
+                  <li><a class="dropdown-item" href="index.html#interests">Interests</a></li>
+                  <li><a class="dropdown-item" href="index.html#cybersecurity">CyberSecurity and Extras</a></li>
+                </ul>
+              </li>
+               <li class="nav-item m-2 pe-2 border-end border-primary text-white">
+                   <a href="industry.html" class="nav-link text-white" style="font-size: 120% ">
+                    Industry Experience</a>
+               </li>
+               <!-- DROPDOWN EDUCATION-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" href="#education" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%">
+                  Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="education.html#edu">Masters</a></li>
+                  <li><a class="dropdown-item" href="education.html#edu">Bacherlors</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="education.html#vol">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="education.html#ta">Teaching Assistant</a></li>
+                </ul>
+              </li>
+               <li class="nav-item  m-2 pe-2 border-end border-primary">
+                   <a href="projects.html" class="nav-link text-white text-decoration-underline fw-bold" 
+                   style="font-size: 120%">Projects</a>
+               </li>
+           </ul>
+           <!--  Right  -->
+           <div class="collapse navbar-collapse justify-content-end align-center">
+              <a class="btn btn-outline-primary" type="submit" href="/documents/Academic CV Canada.pdf"
+                target="_blank">
+                Download CV
+              </a>
+          </div>
+
+       </div>
+    </div>
+   </nav>
+
+
+   <!-- Banner  -->
+   <header class="masterheader">
+    <div class="container-fluid bg-light m-0 p-0">
+        <div class="col">
+            <img src="Images/lake.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
+            <div class="name_banner_ind display-5 p-5 fw-bold" 
+            style="position: absolute; top: 25%; left: 60%; background-color: rgba(240, 255, 255, 0.3);">
+                Projects and Research
+            </div>
+        </div>
+   </div>
+   </header>
+
+  
+  <!-------------------------------- GANs Project Description -------------------------->
+  <section class="gans_proj" id="gans_project">
+    <div class="container-fluid bg-light" style="padding-top: 0rem;">
+
+
+      <!-----------------------------------------    First row -------------------------------------->
+      <div class="row justify-content-center align-items-left border-bottom border-light bg-dark">
+        <h1 class="grad_title">
+          Comparison of cGANs vs CycleGANs for Image Augmentation by Sketching
+        </h1>
+
+        <h2 class="sub">Role</h2>
+        <h4 class="desc">
+          For this project, I worked by myself on creating a novelty dataset of images to train and 
+          test my models, as well as the training of several different types of GAN-based 
+          architectures.
+        </h4>
+
+        <h2 class="sub">Problem</h2>
+        <h4 class="desc">
+          Nowadays, the popularity of Generative Adversarial Networks has grown more extensive thanks to the 
+          use of online tools such as DALL-E, for example. This technology creates an image-based 
+          on a written description provided by a user. Another example is the new feature released 
+          in the BETA software of Photoshop Adobe where we can make use of a generative tool which 
+          will create parts of images to correct defects on photographs, with the intention of
+          for example, delete people, or objects or even creating something that was not originally in the 
+          photograph.
+        </h4>
+
+        <h4 class="desc">
+          With this in mind, I tackled a problem. How to improve the generation of some aspects on 
+          images when the original dataset does not contain that element, and because of this, the 
+          model has no way of learning it. For this purpose, I decided to use Generative Adversarial 
+          Networks, which I found extremely powerful, exciting and dangerous. If you have worked with 
+          GANs before, you should know that a typical exercise to learn how to use them is to train a model
+          to create an image with the same impressionist technique as if Van Gogh or Monet had 
+          painted it. On top of this, there is another project which conditions the generation of the 
+          images, such as we described before. We can condition the creation based on text or  
+          other images. For this purpose, a few years ago, a group of researchers created a new architecture 
+          based on GANs called "Conditional GANs" or "cGANs." If you feel curious about Dr. Isola's work on
+          image-to-image (i2i) translation, please use this link to download my final report, which has the 
+          quality of an academic paper. <a href="documents/Final Report cGAN_vs_CycleGAN_i2i .pdf">link to paper</a>
+          
+        </h4>
+
+        <h4 class="desc">
+          Please look at the following image and appreciate the work of an i2i model. In this 
+          case, the cGAN was trained to transform a basic monochromatic landscape sketch into a 
+          colour image with an impressionist design. This is no easy task, and the beauty of the cGAN 
+          relies on the wide range of possible applications. In the image below, we can appreciate the 
+          basic black and white sketch, followed by the image it generated and, at the end, the actual image 
+          from which the drawing was made. 
+        </h4>
+
+        <img src="Images/GANs1.png" style="max-width:70%;" class=" bannerImg p-0 m-0">
+
+          <h4 class="dec">
+            At the same time as cGANs were introduced and Pix2Pix was released to the public,
+            another architecture was proposed: the Cycle GAN. One of the problems of cGANs is that 
+            while training, you should have pairs of images, for example, a sketch and the painting, 
+            or maybe a pic of a landscape during the day and another at night. Cycle GANs allow the user 
+            to train the model without necessarily having paired images, as they train two generators
+            and two discriminators. 
+          </h4>
+
+         <h4 class="desc">
+          Now, let me introduce the purpose of my project and also the main problem. As you can 
+          appreciate in the image above, the input for the model is a landscape with a tiny 
+          castle. During the impressionist time, artists painted fewer castles than 
+          in other periods of art. Most importantly, the available datasets do not contain images 
+          of castles. Initially, my idea was to create a model which could be used in real life, 
+          for example, in a museum. Allow visitors to draw a sketch, scan it and then make our 
+          model transform the sketch into their very own piece of art, for example, a painting by 
+          Van Gogh or Rembrandt. With this in mind, I used a web service to transform the monet paintings 
+          into sketches and then trained both architectures to perform i2i translation.
+         </h4>
+
+         <h4 class="desc">
+          When I gave my model a sketch with a castle, the output was very unrealistic. As you can see 
+          in the picture above, it looks like just a tiny mountain. This is precisely the problem I want 
+          to solve: how to improve the quality of image generation with little to no data. My 
+          project will tackle Data Augmentation with a different approach and not just zooming in or 
+          rotating the same image.
+         </h4>
+        
+        <h2 class="sub"> Solution</h2>
+
+        <h4 class="desc">
+          To begin my project, I started by collecting as many images of castles painted as if 
+          they were impressionist paintings. As I mentioned, this was challenging as few are on the web. Please refer to the image below to check the pipeline. Once I have 
+          my paintings, I will use the web service mentioned before to convert the paintings into 
+          black-and-white sketches. This dataset only consisted of 50 paired images, and I 
+          called it CastleDataset. This dataset will be used to train both architectures, the 
+          cGAN and the Cycle GAN, and here I will do data augmentation. I will ask the previously 
+          trained models (M2) to generate as many images of castles as possible, but not by themselves. To help the quality of the images, I created a support sketch dataset simply by taking
+          sketches of current castles and asking the models trained with the Castle Dataset to 
+          turn them into impressionist paintings. This new dataset will be called the Augmented
+          Castle Dataset.
+        </h4>
+
+        <img src="Images/GAN2.png" style="max-width:80%;" class=" bannerImg p-0 m-0">
+
+        <h4 class="desc">
+          Now that I have a dataset with more than 1,000 images of impressionist castles, I am ready 
+          to do the final step. I will be merging the Monet dataset with my Augmented Castle 
+          Dataset to train one last batch of models (M3). Please remember that I am constantly
+          training a cGAN and a Cycle GAN. Refer to the image below to see a flow diagram
+          of this process. Once I had introduced my last models, I asked them to transform
+          pictures from sketches one last time, and I compared Frechet's Inception Distance 
+          metric (a form of comparing two pictures used in academia and especially in i2iT tasks)
+          of my final cGAN and Cycle GAN to see which architecture gives the best results.
+        </h4>
+
+        <img src="Images/GAN3.png" style="max-width:80%;" class=" bannerImg p-0 m-0">
+
+        <h4 class="desc">
+          As part of the results, let me say that I consider significant the amount of time 
+          it takes to train a model and the following graph shows how long it takes each model 
+          to qualify. As you can see, Cycle GANs take longer as they obviously train twice as many 
+          models.
+        </h4>
+
+        <img src="Images/GAN4.png" style="max-width:60%;" class=" bannerImg p-0 m-0">
+
+        <h4 class="desc">
+          Now, the most critical part is how well each model generates images after 
+          being trained with our augmented dataset. Please refer to the image below and check how 
+          , in general, cGANs have a lower FID score (this means images are better generated) when 
+          compared to Cycle GANs. But the final cGAN model is crushing the Cycle GAN model
+        </h4>
+
+        <img src="Images/GAN5.png" style="max-width:60%;" class=" bannerImg p-0 m-0">
+
+        <h4 class="desc">
+          Now, the original papers on which I based my research use an alternative way of evaluating
+          the models. The researchers made use of a web platform called Amazon Tucker. Where 
+          you make surveys to real people and ask them to perform different tasks. As I had zero 
+          budget for my project, I did not use this resource but asked 30 of my friends  
+          to guess which image was actual and which was generated by the AI. The results below 
+          show that cGANs again won and fooled people more than Cycle GANS.
+        </h4>
+
+        <img src="Images/GAN6.png" style="max-width:70%;" class=" bannerImg p-0 m-0">
+
+        <h4 class="desc">
+          Before I finish this post, let me show you some of the final generations. The first image below
+          will show the paintings generated by the final M3 cGAN model trained with the original Monet 
+          Dataset together with our Augmented Castles Dataset. The last image will show the results 
+          obtained by the Cycle GAN model. As you may conclude, it is not worth the time to train a 
+          Cycle GAN for this type of Data Augmentation purposes.
+        </h4>
+
+        <img src="Images/GANcgan.png" style="max-width:70%;" class=" bannerImg p-0 m-0">
+        <img src="Images/GANCycle.png" style="max-width:70%;" class=" bannerImg pt-5 m-0">
+
+        <h2 class="sub">Code and Further Information</h2>
+
+        <h4 class="desc">
+          To learn more about my work, visit the following link to download my report 
+          <a href="documents/Final Report cGAN_vs_CycleGAN_i2i .pdf"> link to report</a>
+        </h4>
+        <h4 class="desc">
+          To take a look at my code which was made in Python and in a Jupyter Notebook please 
+          click the following <a href="https://github.com/cotitaco/CycleGans_vs_CGans_for_dataAugmentation
+          ">Link to code</a>
+        </h4>
+        <h4 class="desc">
+          To see the datasets and the complete collection of images, both base and the generated ones 
+          click the following <a href="https://1drv.ms/u/s!Ar9hEjcPB2vDhewD8PDajtOKXqdFtg?e=IJDbYU
+          ">link to images</a>
+        </h4>
+
+
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/rodrigocledesmag/" role="button">Linkedin</a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cotitaco" role="button">Github</a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ledesmagarces/" role="button">Instagram</a>
+
+          <!-- Medium -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://medium.com/@rledesma.itesm" role="button">Medium blog</a>
+
+
+      </section>
+      <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: Rodrigo Ledesma.
+      <p>Banner pictures were taken and edited by me. This whole website was build from scratch
+        using HTML/CSS and Bootstrap
+      </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

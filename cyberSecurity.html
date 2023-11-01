@@ -1,0 +1,371 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="CyberSec_style.css">
+    <title>Projects and Research</title>
+</head>
+<body>
+
+    <!--  Banner  Top -->
+   <!--Nav bar-->
+   <nav class="navbar navbar-expand-md m-0 p-0 fixed-top">
+    <div class="container-fluid p-4" style="background-color: #000000;">
+       <a href="#intro" class="navbar-brand"></a>
+       <!--Toogle buuton for mobile-->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+       data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+       aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <!--Navbar links-->
+
+       <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
+           <ul class="navbar-nav">
+                <!-- DROPDOWN ELEMENT HOME-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" 
+                href="#" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%
+                ">
+                  Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html#about">About Me</a></li>
+                  <li><a class="dropdown-item" href="index.html#interests">Interests</a></li>
+                  <li><a class="dropdown-item" href="index.html#cybersecurity">CyberSecurity and Extras</a></li>
+                </ul>
+              </li>
+               <li class="nav-item m-2 pe-2 border-end border-primary text-white">
+                   <a href="industry.html" class="nav-link text-white" style="font-size: 120% ">
+                    Industry Experience</a>
+               </li>
+               <!-- DROPDOWN EDUCATION-->
+               <li class="nav-item dropdown pt-2 border-end border-primary">
+                <a class="nav-link dropdown-toggle text-white" href="#education" id="navbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 120%">
+                  Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="education.html#edu">Masters</a></li>
+                  <li><a class="dropdown-item" href="education.html#edu">Bacherlors</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="education.html#vol">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="education.html#ta">Teaching Assistant</a></li>
+                </ul>
+              </li>
+               <li class="nav-item  m-2 pe-2 border-end border-primary">
+                   <a href="projects.html" class="nav-link text-white text-decoration-underline fw-bold" 
+                   style="font-size: 120%">Projects</a>
+               </li>
+           </ul>
+           <!--  Right  -->
+           <div class="collapse navbar-collapse justify-content-end align-center">
+              <a class="btn btn-outline-primary" type="submit" href="/documents/Academic CV Canada.pdf"
+                target="_blank">
+                Download CV
+              </a>
+          </div>
+
+       </div>
+    </div>
+   </nav>
+
+
+   <!-- Banner  -->
+   <header class="masterheader">
+    <div class="container-fluid bg-light m-0 p-0">
+        <div class="col">
+            <img src="Images/lake.jpeg" style="max-width:100%;" class=" bannerImg p-0 m-0">
+            <div class="name_banner_ind display-5 p-5 fw-bold" 
+            style="position: absolute; top: 25%; left: 60%; background-color: rgba(240, 255, 255, 0.3);">
+                Projects and Research
+            </div>
+        </div>
+   </div>
+   </header>
+
+  
+  <!-------------------------------- Graduation Project Description -------------------------->
+  <section class="grad_project" id="cyberSecurity_project">
+    <div class="container-fluid bg-light" style="padding-top: 0rem;">
+
+
+      <!-----------------------------------------    First row -------------------------------------->
+      <div class="row justify-content-center align-items-left border-bottom border-light bg-dark">
+        <h1 class="grad_title">
+          Voting Algorithm for predicting Denial Of Service Attacks based on system-logs and IP packets
+          using BERT and Random Forest
+        </h1>
+
+        <h2 class="sub">Role</h2>
+        <h4 class="desc">As my final Master's project (Honours Project), I had the opportunity to work 
+          on an original project proposed by me with the orientation of my supervisor. At the beginning of 
+          the project, I was part of a team of two, and we both worked on creating a state-of-the-art 
+          dataset. I will explain this step in detail later. Unfortunately, after finishing collecting the 
+          data, we split. I got to work on cleaning the data, training and fine-tuning the models, and, 
+          of course, evaluating the ensemble's performance.</h4>
+
+        <h2 class="sub">Problem</h2>
+        <h4 class="desc">This was a very challenging project for several reasons. First, I only had a 
+          couple of months to finish the project. Second, as we were collaborating with company X, 
+          and they were providing part of the infrastructure for obtaining the data, we had to adjust our 
+          methods to their technology. Third, we had to train very complex NLP models in a tiny amount of 
+          time and find a way to make the ensemble efficient. 
+        </h4>
+
+        <h2 class="sub">Solution</h2>
+
+        <h4 class="desc">
+          I will first describe how we obtained the dataset and then describe the implementation and the 
+          architecture of the solution as a whole. 
+
+          There were two different datasets to collect, one which contained the system logs of a computer 
+          and another one which included information related to the IP packets viewed from the side of a 
+          router. Simply put, we created a LAN and a WAN connected by a router using three independent 
+          computers physically connected between them. We used virtual machines (VM) to simulate three 
+          different components: an attacker (using Linux Kali, metasploitable, and hping 3), a storing 
+          database (using MongoDB) and finally, a vulnerable machine, which was a matasploitable VM. As 
+          mentioned before, we had a router also in a VM from company X. The following image shows a quick 
+          representation of our LAN and WAN architecture. Attacks came from the right side of the network 
+          to the left side, passing through the router.
+        </h4>
+
+        <img src="Images/lan_arch.png"  alt="Responsive image" style="max-width:50%;">
+
+        <h4 class="desc">
+          One of the most challenging parts was to extract the information from the router. As it is a 
+          Linux-based system, there is no friendly interface to communicate with it, so we had to learn 
+          nodeJS to create end points and use other JavaScript libraries to create and receive POST 
+          requests to send everything the router received to the database in an XML, to then be cast into 
+          a JSON file and finally stored in  MongoDB. 
+        </h4>
+
+        <h4 class="desc">
+          As mentioned before, we had to create two different datasets; the above-mentioned method was 
+          used to create the first dataset, which contained information regarding the IP packets. In this 
+          dataset, we stored raw data such as the protocols used and the IP addresses, to name a few 
+          examples. The following image shows an example of the dataset:
+        </h4>
+
+        <img src="Images/IP packets.png"  alt="Responsive image" style="max-width:90%;">
+
+        <h4 class="desc">The second dataset was more straightforward to collect as we just needed to move 
+          all the system logs from the vulnerable machine, which has a Linux-based interface, and then 
+          filter only the logs which contain relevant information. For both datasets, we performed DoS 
+          attacks using HPING 3, which, in simple words, creates a flow of IP packets sent from an attacker 
+          to a receptor. For my research, we kept track of the time and date when the attack happened, 
+          and then we labelled all logs and all packets that occurred during that time as attacks. </h4>
+
+        <h4 class="sub text-decoration-underline">
+          Random Forest Classifier
+        </h4>
+        <h4 class="desc">
+          To classify the IP dataset, I trained a Random Forest Classifier model on the data obtained. 
+          After cleaning the data and labelling it, I performed different feature selection methods, 
+          compared the results and chose only the best. These methods were Pearson Correlation, Feature 
+          Importance with Random Forest and Recursive Feature Elimination (RFE). I chose the best 15 
+          features from each technique and trained the RF models with each feature combination. In the end, 
+          the best performance was shown by the features obtained with Pearson Correlation. Once the 
+          features were selected, I did parameter tuning using the Randomized Cross Validation function. 
+        </h4>
+
+        <h4 class="sub text-decoration-underline">
+          BERT Binary Classifier
+        </h4>
+        <h4 class="desc">
+          Once I finished training my Random Forest model and cleaning the logs, I selected only 
+          those files which contained data within the window of time in which I performed the 
+          attacks or the one in which I created regular traffic. As I was working with a 
+          pre-trained model, it is important to mention that my implementation was done using
+          <span class="text-decoration-underline">Tensorflow.</span>
+          Once I had all the logs in a single CSV file, I downloaded two different pre-trained models, 
+          normal BERT and DistilBERT. Both using 12 hidden layers and 12 attention-heads. It is also 
+          important to mention that I downloaded their respective tokenizers to pre-process the text. 
+          As the output layer of my BERT-based model is a vector of 768 elements, I coded a dropout 
+          layer with a 10% ratio to avoid overfitting, followed by a single neuron using the Sigmoid 
+          function to output the binary prediction.
+        </h4>
+        <img src="Images/BERT1.png"  alt="Responsive image" style="max-width:50%;">
+
+
+        <h4 class="sub text-decoration-underline">
+          Voting Algorithm
+        </h4>
+        <h4 class="desc">
+          The performance of each model by itself could be better by creating synthetic variables from 
+          the raw IP packets. Also, due to the technical complexity of the system logs, both models could 
+          perform better when the testing data approaches reality. In my case, I created different batches 
+          of testing data. The first is balanced, using 50%  attacks and 50% benign. Then, the attack data 
+          decreases until it approaches a realistic scenario where the attacks only represent 2% of the 
+          total data. The following graph shows how the data imbalance affects the Random Forest 
+          performance.
+        </h4>
+        <img src="Images/corr_perf.png"  alt="Responsive image" style="max-width:70%;">
+
+        <h4 class="desc">
+          To mitigate this problem, I proposed a voting algorithm using a hard voting technique. The 
+          main idea behind my proposal will be to train three different models: one BERT and two 
+          RandomForest Classifiers trained on independent data. I chose an odd number of models to 
+          avoid having a 50/50 vote. 
+        </h4>
+
+        <h4 class="desc">
+          Let's imagine we are analyzing one packet which arrived five milliseconds ago, precisely at 
+          10:00 p.m. The first step will be to look for a log with the same date and time. If there is no 
+          log, then there is no point in using NLP, so the prediction will only be made by the first RF. 
+          But, in the opposite case, if there are logs with the same date and time, we will extract that 
+          information, ask BERT for a prediction and ask both RFs for their independent predictions. 
+          The class with the most votes at the end of the day will be the final prediction of the voting 
+          algorithm.
+        </h4>
+
+        <h4 class="desc">
+          This is one of many tasks of the algorithm; I also tried to improve the efficiency of my 
+          voting algorithm by creating and testing different time-windows. For example, if the packet 
+          arrived at 10:00 p.m., and there are no logs, how about we look for the logs from 30 seconds 
+          ago? Or 1 minute ago? The experiments that I performed involved using different time windows 
+          of [+-1 min, +-2 mins and +-3 mins].
+        </h4>
+
+        <h4 class="desc">
+          Now let's jump right into the results. Firts let me show you how the models
+          performed after fine tuning in the image below:
+        </h4>
+
+        <div class="container-fluid" style="padding-top: 0rem;">
+          <div class="row align-items-center">
+            <div class="col" style="text-align: center;">
+              <img src="Images/distilBERT_CM.png"  alt="Responsive image" style="max-width:70%;">
+              <h5 class="footer">Confusion Matrix of DistilBERT fine-tuned model</h5>
+            </div>
+
+            <div class="col" style="text-align: center;">
+              <img src="Images/BERT_CM.png"  alt="Responsive image" style="max-width:70%;">
+              <h5 class="footer">Confusion Matrix of BERT model fine-tuned</h5>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="desc">
+          After training the models, let me show you the results of how the time-window method worked. 
+          In the following graphs, I compare the number of true positives, true negatives, false 
+          positives and false negatives with each configuration. Once you look at them, we can 
+          conclude some exciting things. First, increasing the window in time helps predict more 
+          true positives, but it also increases the number of false positives. This behaviour for our
+          application is more desirable than increasing the false negatives, as we might prefer to 
+          stop some potential IP traffic rather than letting it pass.
+        </h4>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <img src="Images/TP.png"  alt="Responsive image" style="max-width:70%;">
+              <h6 class="footer">True positive values of the voting model</h6>
+            </div>
+            <div class="col" style="text-align: center;">
+              <img src="Images/FP.png"  alt="Responsive image" style="max-width:70%;">
+              <h6 class="footer">False positive values of the voting model</h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <img src="Images/FN.png"  alt="Responsive image" style="max-width:70%;">
+              <h6 class="footer">False Negative values of the voting model</h6>
+            </div>
+            <div class="col" style="text-align: center;">
+              <img src="Images/TN.png"  alt="Responsive image" style="max-width:70%;">
+              <h6 class="footer">True negatives values of the voting model</h6>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="dec">
+          After this analysis, we might think it is beneficial to increase the time window of the logs 
+          analyzed, but please take a look at the following image, where I show the performance metrics 
+          for the voting algorithm with all its possible configurations:
+        </h4>
+
+        <img src="Images/metrics.png"  alt="Responsive image" style="max-width:80%;">
+        <h4 class="desc">As it could be appreciated, the F1 score drops as the window increases in 
+          size, which means analyzing more data is not helping the model make better decisions. 
+        </h4>
+
+        <h2 class="sub">Impact</h2>
+
+        <h4 class="desc">This work set the base for other of my co-workers as we will be further using 
+          the code to perform attacks and collect information on different experiments. Currently, I am 
+          still working on more experiments regarding this project, but as of now, I would like to conclude 
+          that analyzing IP flow packets is hard; even a robust Random Forest Classifier has troubles as 
+          the data is not significant enough if no metadata is created from it first. Also, the grammatical 
+          structure and the complex syntaxis of the system logs created by Linux-based machines are a 
+          massive challenge for the pre-trained BERT-based algorithms; fine-tuning it improves the model's 
+          performance, but it is still challenging. Suppose you observe the last graph shown below. In 
+          that case, you will be able to appreciate the comparison of all the performance metrics within 
+          this project. My idea of a voting model improves the performance of the general predictions, as 
+          we can observe by analyzing the F1 score.
+        </h4>
+
+        <img src="Images/Final_voti.png"  alt="Responsive image" style="max-width:90%;">
+
+        <h2 class="sub">Code and Further Information</h2>
+
+        <h4 class="desc">
+          Unfortunately, as we worked with Company X, the data set is confidential. As I worked with a 
+          Jupyter Notebook, I cannot upload the code to a cloud server. However, don't hesitate to get 
+          in touch with me if you need to make use of the code or if you have any other inquiries. 
+        </h4>
+        
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/rodrigocledesmag/" role="button">Linkedin</a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/cotitaco" role="button">Github</a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ledesmagarces/" role="button">Instagram</a>
+
+          <!-- Medium -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://medium.com/@rledesma.itesm" role="button">Medium blog</a>
+
+
+      </section>
+      <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: Rodrigo Ledesma.
+      <p>Banner pictures were taken and edited by me. This whole website was build from scratch
+        using HTML/CSS and Bootstrap
+      </p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
